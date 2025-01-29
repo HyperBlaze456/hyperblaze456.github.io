@@ -1,19 +1,32 @@
+/**
+                RULES
+Always follow these order for this CSS
+1. Alignments, such as display, text-align and flex stuffs should be primary
+2. Margin and padding settings comes next
+3. All other styles that changes color etc, would be the last.
+**/
 body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
   
 header {
-    background-color: #f8f8f8;
     display: flex;
-    padding: 1rem;
     text-align: center;
+    background-color: #f8f8f8;
+    padding: 0.6rem;
+}
+
+header h1 {
+    align-self: center;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 nav ul {
-    list-style: none;
     align-items: center;
     display: flex;
+    list-style: none;
 }
 
 nav ul li {
@@ -22,4 +35,21 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
+    color:dimgrey;
+}
+
+main {
+    margin: 10;
+}
+
+section.basic a{
+    text-decoration: underline;
+    color: grey;
+}
+
+footer {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 30px;
+    margin-top: 1rem;
 }
